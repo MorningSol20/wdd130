@@ -1,16 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: #2d2b43;
+    color: white;
     padding: 10px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
     color:  white;
+    background-color: transparent;
     display: block;
     padding: 20px;
+    font-size: larger;
+    text-decoration: none;
 }
 
 h1 {
-    color: darkblue;
+    color: #2d2b43;
+    background-color: transparent;
 }
 
 img {
@@ -22,5 +35,39 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+main {
+    max-width: 840px;
+    margin: 1rem;
+    text-align: justify;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid ;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #2d2b43;
+    color: white;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+
+footer {
+    margin-top: 10px;
+    border-top: 1px solid black;
+    text-align: center;
 }
