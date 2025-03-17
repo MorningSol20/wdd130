@@ -56,9 +56,10 @@ main {
 
 main img {
     float: right;
-    width: 150px;
+    width: 200px;
     height: auto;
     margin: 15px;
+    border-radius: 1rem;
 }
 
 aside {
@@ -86,7 +87,7 @@ footer {
 
 /* Class Slectors */
 
-.box, .list.box {
+.box, .box.list {
     box-sizing: border-box;
     margin: 1rem;
     padding: 1rem;
@@ -94,10 +95,10 @@ footer {
     color: white;
     background-color: #d3d5da;
 }
-.list.box li {
+.box.list li {
     list-style: none;
 }
-.list.box a {
+.box.list a {
     text-decoration: none;
     color: var(--background-darkblue);
     font-weight: 600;
