@@ -1,0 +1,208 @@
+:root {
+    /* Page colors */
+    --primary-color: #07BEB8;
+    --secondary-color: #25283D;
+    --accent1-color: #98DFEA;
+    --accent2-color: #8F3985;
+
+    /* Typography */
+    --heading-font: "Big Shoulders Stencil", sans-serif;
+    --text-font: "Winky Sans", sans-serif;;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: var(--text-font);
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+    height: 12vh;
+    padding: 10px;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+header > .icon > img {
+    position: fixed;
+    top: 10px;
+    border-radius: 2em;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: max(25%); left: min(35%);
+    background-color: var(--secondary-color);
+    width: 60%;
+    height: 50px;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid var(--accent1-color);
+    box-shadow: 2.5px 2.5px 5px var(--accent2-color);
+}
+
+header nav a {
+    display: block;
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-size: large;
+    padding: .3rem;
+}
+
+header nav a:hover {
+    border: 1px solid var(--accent1-color);
+    font-size: large;
+    border-radius: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+header nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    height: 2px;
+    width: 10%;
+    background-color: var(--accent1-color);    
+    border-radius: 1rem;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+
+
+main, footer {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+header nav a:hover::before {
+    transform: scaleX(1);
+}
+
+.cover-photo {
+    position: relative;
+    margin: -10px;
+}
+
+
+.cover-photo img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(0.4)
+}
+
+.cover-photo div {
+    position: absolute;
+    bottom: 40px; left: 6.5rem;
+    color: #fff;
+    width: 75vw;
+} 
+
+.cover-photo div::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 6px;
+    width: 15rem;
+    background-color: var(--accent1-color);
+}
+.cover-photo div h1 {
+    font-size: 6rem;
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.cover-photo div h1, .cover-photo div p {
+    letter-spacing: -0.03125rem;
+}
+
+.cover-photo div p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18pt;
+}
+
+section.galery {
+    display: flex;
+    width: 80%;
+    margin: 10%;
+    flex-wrap: wrap;
+    gap: .5rem; 
+    justify-content: center;
+    cursor: pointer;
+}
+
+section.galery > figcaption.img-item {
+    position: relative;
+    flex: 1 1 calc(25% - 10px); 
+    max-width: calc(33.33% - 10px);
+    background-color: var(--accent1-color);
+    text-align: center;
+}
+
+section.galery > figcaption.img-item > p {
+    font-size: small;
+}
+
+
+section.galery img {
+    width: 95%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.img-item:hover {
+    transform: scale(1.1); 
+    z-index: 2;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+}
+
+footer span {
+    font-family: var(--heading-font);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+footer .contact img{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
