@@ -117,7 +117,7 @@ header nav a:hover::before {
 
 .cover-photo div {
     position: absolute;
-    bottom: 40px; left: 6.5rem;
+    bottom: 40px; left: 6rem;
     color: #fff;
     width: 75vw;
 } 
