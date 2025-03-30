@@ -22,13 +22,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: var(--secondary-color);
-    justify-content: center;
-}
-
-body img {
-    width: 400px;
-    height: auto;
+    background-color: white;
 }
 
 
@@ -40,28 +34,40 @@ p {
     font-family: var(--text-font);
 }
 
-
-main, footer {
-    width: 70vw;
+main {
+    align-self: space-between;
 }
 
-main h1 {
-    position: absolute;
+main, footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main h1{
+ text-align: center;
+}
+
+article {
+    display: flex;
+    flex-direction: row-reverse;
+}
+article img {
+    width: 200px;
 }
 
 header {
-    display: flex;
-    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px 0;
     width: 100%;
     height: 12vh;
     padding: 10px;
+    justify-items: center;
     align-items: center;
     background-color: var(--secondary-color);
 }
 
 header > .icon > img {
-    position: fixed;
-    top: 10px;
     border-radius: 2em;
     width: 80px;
     height: 80px;
@@ -71,8 +77,6 @@ header > .icon > img {
 header > nav {
     display: flex;
     justify-content: space-evenly;
-    position: relative;
-    left: max(25%); left: min(35%);
     background-color: var(--secondary-color);
     width: 60%;
     height: 50px;
@@ -93,12 +97,6 @@ header nav a {
     padding: .3rem;
 }
 
-.hero img {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: auto;
-}
 
 header nav a:hover {
     border: 1px solid var(--accent1-color);
@@ -110,12 +108,45 @@ header nav a:hover {
 
 main, footer {
     background-color: #fff;
-    width: 100%;
     padding: 10px;
 }
 
 header nav a:hover::before {
     transform: scaleX(1);
+}
+
+
+.history {
+    display: flex;
+    align-items: center;
+}
+
+.history img {
+    margin: 0 .5rem;
+}
+
+.galery {
+    margin-top: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.galery div {
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-around;
+}
+
+.galery div figure {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+
+.galery div figure img {
+    width: 100%; height: auto;
 }
 
 
