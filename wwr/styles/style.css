@@ -142,7 +142,7 @@ h2 {
     justify-content: space-around;
 }
 
-section > figure > img.img-cont {
+section >figure > img.img-cont {
     width: 200px;
     object-fit: cover;
 }
@@ -153,7 +153,9 @@ section > figure > img.img-cont {
 }
 
 
-
+.galery div figure img {
+    width: 100%; height: auto;
+}
 
 
 footer {
