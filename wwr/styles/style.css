@@ -142,6 +142,10 @@ h2 {
     justify-content: space-around;
 }
 
+.img-cont {
+    width: 600px;
+}
+
 .galery div figure {
     margin: 0 1rem;
     text-align: center;
