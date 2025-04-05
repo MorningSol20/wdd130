@@ -142,7 +142,7 @@ h2 {
     justify-content: space-around;
 }
 
-figure > img.img-cont {
+section > figure > img.img-cont {
     width: 200px;
     object-fit: cover;
 }
