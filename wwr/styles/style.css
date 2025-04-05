@@ -52,6 +52,7 @@ article img {
     width: 200px;
 }
 
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -96,7 +97,7 @@ header nav a {
 }
 
 
-header nav a:hover {
+header nav a:hover, a.current {
     border: 1px solid var(--accent1-color);
     font-size: large;
     border-radius: 1rem;
