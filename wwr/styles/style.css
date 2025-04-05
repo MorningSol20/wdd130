@@ -147,6 +147,10 @@ h2 {
     object-fit: cover;
 }
 
+.information {
+    float: right;
+}
+
 .galery div figure {
     margin: 0 1rem;
     text-align: center;
