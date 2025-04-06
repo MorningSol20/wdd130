@@ -142,13 +142,19 @@ h2 {
     justify-content: space-around;
 }
 
-.img-cont {
-    width: 200px;
-    object-fit: cover;
-}
 
 .information {
     float: right;
+}
+
+.feedback {
+    display: flex;
+    max-width: 80%;
+}
+
+.feedback > img {
+    width: 200;
+    
 }
 
 .galery div figure {
