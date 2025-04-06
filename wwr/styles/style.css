@@ -143,10 +143,6 @@ h2 {
 }
 
 
-.information {
-    float: right;
-}
-
 .feedback {
     display: flex;
     max-width: 80%;
@@ -154,7 +150,7 @@ h2 {
 
 .feedback > img {
     width: 200;
-    
+
 }
 
 .galery div figure {
