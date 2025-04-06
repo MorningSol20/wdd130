@@ -143,26 +143,22 @@ h2 {
 }
 
 
-.feedback {
+.feedback div {
     display: flex;
+    margin: 1rem 0;
+    justify-content: space-around;
     max-width: 80%;
 }
 
-.feedback > img {
-    width: 200;
-
-}
-
-.galery div figure {
+.galery div figure, .feedback div figure {
     margin: 0 1rem;
     text-align: center;
 }
 
 
-.galery div figure img {
+.galery div figure img, .feedback > img {
     width: 100%; height: auto;
 }
-
 
 footer {
     display: flex;
