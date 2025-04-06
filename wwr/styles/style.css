@@ -168,7 +168,7 @@ footer {
     border-top: 1px solid #000;
 }
 
-footer span {
+footer span, figcaption > span {
     font-family: var(--heading-font);
     font-weight: 900;
     letter-spacing: 2px;
